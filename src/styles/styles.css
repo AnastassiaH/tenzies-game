@@ -69,10 +69,28 @@ box-shadow: 1px 1px 8px rgb(0 0 0 / 40%) inset, -1px -1px 8px rgb(0 0 0 / 40%) i
     box-shadow: 1px 1px 8px rgb(0 0 0 / 40%) inset, -1px -1px 8px rgb(0 0 0 / 40%) inset;
 }
 
-@media screen and (max-width: 400px) {
+@media screen and (max-width: 500px) {
+    #root{
+        margin: 0 auto;
+        padding: 0;
+    }
+
+    .tenzies-text p{
+        text-align: center;
+    }
+
+    .container-inner{
+        padding: 10px;
+        display: flex;
+        align-items: center;
+    }
+
+    .container-outer{
+        height: 100vh;
+    }
     .die{
-        width: 38%;
-        font-size: 35px;
+        width: 33%;
+        font-size: 25px;
         margin: 5px;
     }
 }
