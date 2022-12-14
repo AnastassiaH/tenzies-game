@@ -14,7 +14,7 @@ body{
     justify-content: center;
     align-items: center;
     flex-direction: column;
-    width: 800px;
+    max-width: 800px;
     margin: 15px auto;
     padding: 10px;
 }
@@ -67,5 +67,13 @@ box-shadow: 1px 1px 8px rgb(0 0 0 / 40%) inset, -1px -1px 8px rgb(0 0 0 / 40%) i
 
 .roll-btn:hover {
     box-shadow: 1px 1px 8px rgb(0 0 0 / 40%) inset, -1px -1px 8px rgb(0 0 0 / 40%) inset;
+}
+
+@media screen and (max-width: 400px) {
+    .die{
+        width: 38%;
+        font-size: 35px;
+        margin: 5px;
+    }
 }
 
