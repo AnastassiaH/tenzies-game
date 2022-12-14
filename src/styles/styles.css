@@ -1,0 +1,71 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    background-color: #FFF;
+    color: #000;
+}
+
+#root{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    width: 800px;
+    margin: 15px auto;
+    padding: 10px;
+}
+
+.container-outer{
+    background-color: #000;
+    padding: 40px 20px;
+}
+
+.container-inner{
+    background-color: #FFF;
+    border-radius: 15px;
+    padding: 30px;
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+}
+
+.container-inner h1{
+    text-align: center;
+}
+
+.tenzies-body{
+    width: 100%;
+    margin: 20px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    
+}
+
+.die{
+width: 17%;
+text-align: center;
+padding: 25px 30px;
+margin: 10px;
+font-size: 50px;
+border-radius: 5px;
+box-shadow: 1px 1px 8px rgb(0 0 0 / 40%) inset, -1px -1px 8px rgb(0 0 0 / 40%) inset;  
+}
+
+.roll-btn{
+    width: 150px;
+    background-color: blue;
+    outline: none;
+    cursor: pointer;
+    color: #fff;
+    height: 60px;
+}
+
+.roll-btn:hover {
+    box-shadow: 1px 1px 8px rgb(0 0 0 / 40%) inset, -1px -1px 8px rgb(0 0 0 / 40%) inset;
+}
+
