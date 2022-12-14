@@ -2,10 +2,14 @@ import React from "react";
 import { useEffect } from "react";
 import { useState } from "react";
 import Die from "./Die";
+import Confetti from "react-confetti";
 
 export default function MainCard() {
   const [dice, setDice] = useState([]);
   const [winning, setWinning] = useState(false);
+
+  const windowWidth = window.innerWidth;
+  const windowHeight = window.innerHeight;
 
   const fillDiceArray = () => {
     const arr = [];
@@ -69,6 +73,7 @@ export default function MainCard() {
 
   return (
     <div className="container-outer">
+      {winning ? <Confetti width={windowWidth} height={windowHeight} /> : ""}
       <div className="container-inner">
         <div className="tenzies-text">
           <h1>Tenzies</h1>
